@@ -22,7 +22,7 @@ class game:
     def inputposition(self):
         game.count += 1
         self.position_column = int(
-            input("\n" + self.player + " please input column position: ")
+            input("\n" + self.player + " Please input column position: ")
         )
         while True:
             if (
@@ -35,10 +35,10 @@ class game:
             else:
                 break
             self.position_column = int(
-                input("\n" + self.player + " please input column position: ")
+                input("\n" + self.player + " Please input column position: ")
             )
 
-        self.position_row = int(input(self.player + " please input row position: "))
+        self.position_row = int(input(self.player + " Please input row position: "))
 
         while True:
             if (
@@ -50,7 +50,7 @@ class game:
 
             else:
                 break
-            self.position_row = int(input(self.player + " please input row position: "))
+            self.position_row = int(input(self.player + " Please input row position: "))
 
         while True:
             if game.board[self.position_column][self.position_row] != "_":
@@ -60,9 +60,9 @@ class game:
                 break
 
             self.position_column = int(
-                input("\n" + self.player + " please input column position: ")
+                input("\n" + self.player + " Please input column position: ")
             )
-            self.position_row = int(input(self.player + " please input row position: "))
+            self.position_row = int(input(self.player + " Please input row position: "))
 
         if self == Player1:
             self.board[self.position_column][self.position_row] = "x"
