@@ -1,4 +1,5 @@
 class game:
+    
     board = [["_", "_", "_"], ["_", "_", "_"], ["_", "_", "_"]]
     position_column = 0
     position_row = 0
